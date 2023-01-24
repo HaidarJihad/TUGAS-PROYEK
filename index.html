@@ -1,10 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>eCar</title>
+  <title>Syarat dan Ketentuan</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
   <link rel="stylesheet" href="assest/bootstrap-5.2.3/bootstrap-5.2.3-dist/css/bootstrap.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3-dist/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -12,334 +34,506 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <!-- Navbar -->
+<body class="hold-transition sidebar-mini layout-fixed">
+  <div class="wrapper">
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
 
-  <div class="row">
-    <div class="col-md-12">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark  shadow-lg fixed-top">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="assest/img/logoban.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            <strong>eCar</strong>
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .row {
+        margin: 50px;
+      }
+
+      .carousel-caption {
+        color: black;
+      }
+    </style>
+
+
+
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-orange navbar-light">
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="index.html" class="nav-link">Halaman</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="syaratKetentuan.html" class="nav-link">Syarat & Ketentuan</a>
+        </li>
+        <li class="nav-item d-none d-sm-inline-block">
+          <a href="#" class="nav-link">Tentang Kami</a>
+        </li>
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Navbar Search -->
+        <li class="nav-item">
+          <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+            <i class="fas fa-search"></i>
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#produk">Produk & Layanan</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#booking">Booking</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#berita">Berita</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#tentangkami">Tentang Kami</a>
-              </li>
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-secondary" type="submit">Search</button>
+          <div class="navbar-search-block">
+            <form class="form-inline">
+              <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                  <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+              </div>
             </form>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" a href="login.html">
+            <i class="nav-icon far fa-user"></i>
+            <span class="badge badge-danger navbar-badge"></span>
+          </a>
+        </li>
 
-            <div class="navbar-nav">
-              <a href="" class="shadow-lg btn btn-primary m-2" role="button">Login</a>
+        <!-- Applications Menu -->
+        <li class="nav-item">
+          <a class="nav-link" a href="https://www.facebook.com">
+            <i class="nav-icon fab fa-facebook"></i>
+            <span class="badge badge-danger navbar-badge"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" a href="https://www.instagram.com">
+            <i class="nav-icon fab fa-instagram"></i>
+            <span class="badge badge-danger navbar-badge"></span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-light-orange elevation-4">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-link">
+        <img src="assest/img/carsport.jpg" alt="ECarSport Logo" class="brand-image img-circle elevation-3"
+          style="opacity: .8">
+        <span class="brand-text font-weight-light">ECar Sport</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="assest/img/user.png" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">Pengguna</a>
+          </div>
+        </div>
+
+        <!-- SidebarSearch Form -->
+        <div class="form-inline">
+          <div class="input-group" data-widget="sidebar-search">
+            <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-sidebar">
+                <i class="fas fa-search fa-fw"></i>
+              </button>
             </div>
           </div>
         </div>
-      </nav>
-    </div>
-  </div>
-  <!-- Stop Navbar -->
 
-  <!-- Main Row -->
-
-  <div class="jumbotron">
-    <div class="md-12">
-      <div class="container py-4">
-        <div class="p-5 mb-4 bg-light rounded-3">
-          <div class="container-fluid py-5">
-            <h1 class="display-5 fw-bold" id="home">Selamat Datang di eCar</h1>
-            <p class="col-md-8 fs-4">Nikmati perjalanan yang nyaman dan hemat bersama eCar Rental Mobil terbaik dan
-              terpercaya. Wujudkan impian perjalanan luar biasa anda bersama kami eCar</p>
-            <a href="#home"></a>
-          </div>
-        </div>
-      </div>
-      <!-- Stop Main Row -->
-
-      <!-- Content -->
-
-      <div class="row p-5">
-        <div class="col-md-9">
-          <h1 id="produk">Produk</h1>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga rerum, incidunt et eum minima dolorum est
-            quam reprehenderit harum quasi voluptatum corporis id commodi? Qui at magnam adipisci nam suscipit!
-          </p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto fugit vel est consequuntur enim autem
-            repellendus ullam velit, nam assumenda.</p>
-          <div class="row pt-4">
-            <div class="col-md-4">
-              <h5 class="mt-3">Kendaraan baru</h5>
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-              <i class="fa-sharp fa-solid fa-cart-plus fa-5x"></i>
-            </div>
-
-            <div class="col-md-4">
-              <h5 class="mt-3">Cara Booking</h5>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eaque voluptates suscipit.</p>
-              <i class="fa-solid fa-bell fa-5x"></i>
-            </div>
-
-            <div class="col-md-4">
-              <h5 class="mt-3">Pembayaran yang Nyaman</h5>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, quidem.</p>
-              <i class="fa-solid fa-money-bill fa-5x"></i>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-3">
-          <ul class="list-group">
-            <li class="list-group-item active bg-warning" aria-current="true">Kategori Produk</li>
-            <li><a class="list-group-item" href="#buswisata">Bus Wisata</a></li>
-            <li><a class="list-group-item" href="#minibus">Minibus Keluarga</a></li>
-            <li><a class="list-group-item" href="#sedan">Sedan Eksekutif</a></li>
-            <li><a class="list-group-item" href="#">Mobil Ekspedisi</a></li>
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">
+                <i class="nav-icon fas fa-home"></i>
+                <p>
+                  Halaman
+                </p>
+              </a>
+            </li>
+            <li class="nav-item menu">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-car"></i>
+                <p>
+                  Kendaraan
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="daftarKendaraan.html" class="nav-link">
+                    <i class="nav-icon fas fa-bars"></i>
+                    <p>Daftar Kendaraan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="./index2.html" class="nav-link">
+                    <i class="nav-icon fas fa-info"></i>
+                    <p>Info Kendaraan</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="FormTambahKendaraan.html" class="nav-link">
+                    <i class="nav-icon fas fa-plus-square"></i>
+                    <p>Tambah Kendaraan</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a href="checkout.html" class="nav-link">
+                <i class="nav-icon fas fa-folder-open"></i>
+                <p>
+                  Form Pemesanan
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="daftarPeminjam.html" class="nav-link">
+                <i class="nav-icon fas fa-address-book"></i>
+                <p>
+                  Daftar Peminjam
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">
+                <i class="nav-icon fas fa-user"></i>
+                <p>
+                  Login
+                </p>
+              </a>
+            </li>
           </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <div class="content-header">
+
+      </div>
+      <!-- /.content-header -->
+
+      <!-- Main content -->
+
+      <body>
+
+
+        <main>
+
+          <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+
+            </div>
+            <div class="carousel-inner">
+              <div>
+                <center><img src="assest/img/IMG_3883.jpg" width="500px" height="700px" <div class="container">
+                </center>
+                <div class="carousel-caption text-start">
+                  <h1>Selamat Datang di eCar</h1>
+                  <p>Nikmati perjalanan yang nyaman dan hemat bersama eCar Rental Mobil terbaik <br>
+                    dan
+                    terpercaya. Wujudkan impian perjalanan luar biasa anda bersama kami eCar.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+
+  </div>
+
+
+  <!-- Marketing messaging and featurettes
+      ================================================== -->
+  <!-- Wrap the rest of the page in another container to center all the content. -->
+
+  <div class="container marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <center>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+
+        </div>
+        <div class="carousel-inner">
+          <div class="row">
+            <div class="col-lg-3">
+              <img src="assest/img/haidar.png" width="198px">
+              <title>Placeholder</title>
+              </svg>
+              <img src="asset" alt="">
+              <h2 class="fw-normal">M. Haidar Jihad I.</h2>
+              <p>0110222205</p>
+              <p>haidarjihad2@gmail.com
+                github.com/HaidarJihad
+              </p>
+              <p><a class="btn btn-secondary" href="#">DATA DIRI</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-3">
+              <img src="assest/img/napsa.png" width="215px">
+              <title>Placeholder</title>
+              </svg>
+              <h2 class="fw-normal">Navsa Urva</h2>
+              <p>0110222085</p>
+              <p>nvsaurva@gmail.com
+                github.com/NavsaUrva
+              </p>
+              <p><a class="btn btn-secondary" href="#">DATA DIRI</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-3">
+              <img src="assest/img/bina.png" width="240px">
+              <title>Placeholder</title>
+              </svg>
+              <h2 class="fw-normal">Sabrina Ramadhani</h2>
+              <p>0110222068</p>
+              <p>sabrinabhinaaa@gmail.com
+                github.com/Sabrinabhina
+              </p>
+              <p><a class="btn btn-secondary" href="#">DATA DIRI</a></p>
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-3">
+              <img src="assest/img/sopi.png" width="205px">
+              <title>Placeholder</title>
+              </svg>
+              <h2 class="fw-normal">Shofi Syahria M.</h2>
+              <p>0110222012</p>
+              <p>shofi.syahriam@gmail.com
+                github.com/shofiesyrrr</p>
+              <p><a class="btn btn-secondary" href="#">DATA DIRI</a></p>
+            </div><!-- /.col-lg-4 -->
+          </div><!-- /.row -->
         </div>
       </div>
+  </div>
+  </center>
+  <div class="container-fluid pt-5 pb-5 bg-light">
+    <div class="container-fluid">
+      <h1 class="text-center mb-5">Koleksi Mobil Kami</h1>
 
-      <div class="container-fluid pt-5 pb-5 bg-light">
-        <div class="container-fluid">
-          <h1 class="text-center mb-5">Koleksi Mobil Kami</h1>
-
-          <div class="row pt-4 gx-4 gy-4">
-            <div class="col-md-4">
-              <div class="card" style="width: 20rem;" id="buswisata">
-                <img src="assest/img/buswisata.jpg" class="card-img-top" alt="buswisata">
-                <div class="card-body">
-                  <p class="card-text">Bus Wisata</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <div class="fs-4 mb-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                          class="bi bi-person-fill" viewBox="0 0 16 16">
-                          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-                        </svg>
-                        8
-                      </div>
-                    </div>
-                    <small class="text-muted">Rp. 250K/Jam</small>
+      <div class="row pt-4 gx-4 gy-4">
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem;" id="buswisata">
+            <img src="assest/img/buswisata.jpg" class="card-img-top" alt="buswisata">
+            <div class="card-body">
+              <p class="card-text">Bus Wisata</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <div class="fs-4 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                      class="bi bi-person-fill" viewBox="0 0 16 16">
+                      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                    </svg>
+                    8
                   </div>
                 </div>
+                <small class="text-muted">Rp. 250K/Jam</small>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-4">
-              <div class="card" style="width: 20rem;" id="minibus">
-                <img src="assest/img/minibus.jpg" class="card-img-top" alt="minibus">
-                <div class="card-body">
-                  <p class="card-text">Minibus Keluarga</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <div class="fs-4 mb-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                          class="bi bi-person-fill" viewBox="0 0 16 16">
-                          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-                        </svg>
-                        21
-                      </div>
-                    </div>
-                    <small class="text-muted">Rp. 500K/Jam</small>
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem;" id="minibus">
+            <img src="assest/img/minibus.jpg" class="card-img-top" alt="minibus">
+            <div class="card-body">
+              <p class="card-text">Minibus Keluarga</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <div class="fs-4 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                      class="bi bi-person-fill" viewBox="0 0 16 16">
+                      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                    </svg>
+                    21
                   </div>
                 </div>
+                <small class="text-muted">Rp. 500K/Jam</small>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div class="col-md-4">
-              <div class="card" style="width: 20rem;" id="sedan">
-                <img src="assest/img/sedan.jpg" class="card-img-top" alt="sedan">
-                <div class="card-body">
-                  <p class="card-text">Sedan Eksekutif</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <div class="fs-4 mb-3">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
-                          class="bi bi-person-fill" viewBox="0 0 16 16">
-                          <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
-                        </svg>
-                        14
-                      </div>
-                    </div>
-                    <small class="text-muted">Rp. 1.000K/Jam</small>
+        <div class="col-md-4">
+          <div class="card" style="width: 20rem;" id="sedan">
+            <img src="assest/img/sedan.jpg" class="card-img-top" alt="sedan">
+            <div class="card-body">
+              <p class="card-text">Sedan Eksekutif</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <div class="fs-4 mb-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                      class="bi bi-person-fill" viewBox="0 0 16 16">
+                      <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3Zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6Z" />
+                    </svg>
+                    14
                   </div>
                 </div>
+                <small class="text-muted">Rp. 1.000K/Jam</small>
               </div>
             </div>
+          </div>
+        </div>
 
-            <div class="container-fluid pt-5 pb-5 bg-light">
-              <div class="container-fluid">
-                <div class="row mb-2">
-                  <div class="row p-5">
-                    <div class="col-md-9">
-                      <div
-                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="container-fluid pt-5 pb-5 bg-light">
+          <div class="container-fluid">
+            <div class="row mb-2">
+              <div class="row p-5">
+
+                <div class="col-md-3">
+                </div>
+                <div class="card mb-3" style="max-width: 1280px;">
+                  <div class="row g-0">
+                    <div class="col-md-4">
+                      <img src="assest/img/minibus.jpg" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                      <div class="card-body">
                         <div class="col p-4 d-flex flex-column position-static">
-                          <h3 class="mb-0">Bus Wisata</h3>
-                          <p class="card-text mb-auto">Armada bus Mercedes Benz yang terkenal akan "Safty & Comfort"
-                            dengan standar
-                            kenyamanan dan keamanan dibidang tranfortasi.</p>
+                          <h3 class="mb-0">Minibus Keluarga</h3>
+                          <p class="card-text mb-auto">Mobil minibus merupakan wujud lain
+                            dari MPV dengan kemampuan
+                            mengangkut 7
+                            penumpang dewasa dengan nyaman. Pilihannya tentu sangat
+                            banyak dan memberikan kenyamanan
+                            keluarga Anda.
+                          </p>
                           <a href="#" class="stretched-link">Lihat Detail</a>
                         </div>
-                        <div class="col-auto d-none d-lg-block">
-                          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg"
-                            role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
-                            focusable="false">
-                            <title>Placeholder</title>
-                            <rect width="100%" height="100%" fill="#55595c" /><text x="50%" y="50%" fill="#eceeef"
-                              dy=".3em">Thumbnail</text>
-                          </svg>
-
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-3">
-                      <ul class="list-group">
-                        <li class="list-group-item active bg-warning" aria-current="true">Kategori Produk</li>
-                        <li><a class="list-group-item" href="#buswisata">Bus Wisata</a></li>
-                        <li><a class="list-group-item" href="#minibus">Minibus Keluarga</a></li>
-                        <li><a class="list-group-item" href="#sedan">Sedan Eksekutif</a></li>
-                        <li><a class="list-group-item" href="#">Mobil Ekspedisi</a></li>
-                      </ul>
-                    </div>
-                    <div class="card mb-3" style="max-width: 1280px;">
-                      <div class="row g-0">
-                        <div class="col-md-4">
-                          <img src="assest/img/minibus.jpg" class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8">
-                          <div class="card-body">
-                            <div class="col p-4 d-flex flex-column position-static">
-                              <h3 class="mb-0">Minibus Keluarga</h3>
-                              <p class="card-text mb-auto">Mobil minibus merupakan wujud lain dari MPV dengan kemampuan
-                                mengangkut 7
-                                penumpang dewasa dengan nyaman. Pilihannya tentu sangat banyak dan memberikan kenyamanan
-                                keluarga Anda.
-                              </p>
-                              <a href="#" class="stretched-link">Lihat Detail</a>
-                            </div>
-                          </div>
-                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <!-- booking -->
-
-              <div class="container-fluid pt-5 pb-5 bg-light">
-                <div class="container-fluid">
-                  <h4 class="text mb-5" id="booking">Booking Kendaraan</h4>
-                  <form>
-                    <div class="col-md-4">
-                      <div class="form-group">
-                        <label>Pilih Kendaraan</label>
-                        <select class="form-select" required>
-                          <option value=""> Bus Wisata Bintang 5 </option>
-                          <option> Minibus Keluarga Bintang 5 </option>
-                          <option> Sedan Eksekutif Bintang 5 </option>
-                        </select>
-                      </div>
-                    </div>
-                    <br>
-                    <div class="form-group">
-                      <label>Nama Peminjam : </label>
-                      <input type="text" name="" class="form-control" placeholder="">
-                    </div><br>
-                    <div class="form-group">
-                      <label>Kategori Peminjam : </label><br>
-                      <div class="form-check-inline">
-                        <input type="radio" class="form-check-input" name="radio1" id="radio2" checked="">
-                        <label>Pribadi</label>
-                      </div>
-                      <div class="form-check-inline">
-                        <input type="radio" class="form-check-input" name="radio1" id="radio2">
-                        <label>Perusahaan/Organisasi</label>
-                      </div><br>
-                      <br>
-                      <div class="form-group">
-                        <label>Deskripsi Kebutuhan </label><br>
-                        <textarea class="form-control" rows="5"></textarea>
-                      </div>
-                    </div><br>
-                    <div class="row">
-                      <div class="col-md-2">
-                        <div class="form-group">
-                          <label>Tanggal Pinjam :</label>
-                          <input type="date" name="" class="form-control">
-                        </div>
-                      </div>
-                      <div class="col-md-2">
-                        <div class="form-group">
-                          <label>s.d :</label>
-                          <input type="date" name="" class="form-control">
-                        </div>
-                      </div>
-                    </div><br>
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <label>Kontak Person : </label>
-                        <input type="text" name="" class="form-control" placeholder="">
-                      </div>
-                    </div><br>
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <label>Telpon/HP : </label>
-                        <input type="text" name="" class="form-control" placeholder="">
-                      </div>
-                    </div><br>
-                    <div class="col-md-5">
-                      <div class="form-group">
-                        <label>Email : </label>
-                        <input type="email" name="" class="form-control" placeholder="">
-                      </div>
-                    </div><br>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                    <button type="reset" class="btn btn-secondary">Reset</button>
-                  </form>
+            </div>
+          </div>
+        </div><!-- /.container -->
 
 
-                  <!-- Footer -->
 
-                  <div class="container">
-                    <footer class="py-3 my-4">
-                      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Produk & Layanan</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Booking</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Berita</a></li>
-                        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Tentang Kami</a></li>
-                      </ul>
-                      <p class="text-center text-muted">Develop By Mahasiswa STT NF &copy; 2022</p>
-                    </footer>
-                  </div>
-                  <script src="assest/bootstrap-5.2.3/bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
-                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3-dist/dist/js/bootstrap.bundle.min.js"
-                    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-                    crossorigin="anonymous">
-                  </script>
+        <!-- FOOTER -->
 
+        </main>
+
+
+        <script src="/docs/5.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+          crossorigin="anonymous"></script>
+
+
+</body>
+
+<!-- Footer -->
+<div class-"row">
+  <div class-"col-12">
+    <center>
+      <strong>Copyright By Mahasiswa STT-NF @2022
+    </center>
+    <div class="float-right d-none d-sm-inline-block">
+    </div>
+  </div>
+</div>
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="dist/js/demo.js"></script>
+<!-- AdminLTE dashboard demo (This is only for demo purposes) -->
+<script src="dist/js/pages/dashboard.js"></script>
 </body>
 
 </html>
